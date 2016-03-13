@@ -1,4 +1,5 @@
 $text-color: #2d2d2d
+$mid-text: #505050
 $light-background: #fafafa
 $dark-background: #efefef
 $highlight-color: #cd6a51
@@ -10,57 +11,198 @@ $highlight-color: #cd6a51
 html, body
   width: 100%
   height: 100%
+
+html
   background-color: $light-background
 
 p
-  font-family: Merriweather, serif
+  font-family: Cardo, serif
   color: #7d7d7d
 
 h1, h2, h3, h4, h5
-  font-family: Lato, sans-serif
+  font-family: Montserrat, sans-serif
   color: $text-color
-
-h1
-  font-size: 4em
-  color: $light-background
-  margin-bottom: 10px
-
-
-h2
-  color: $light-background
 
 a
   text-decoration: none
   color: $highlight-color
 
+a:hover
+  color: #D48A78
+
 ::selection
-  background: $highlight-color
-  opacity: 0.7
+  background-color: rgba(205,106,81,0.5)
 
 div.width-limiter
   max-width: 1024px
   margin: 0 auto 0 auto
 
-
 section#hero
   width: 100%
   height: 100%
   position: relative
+  overflow: hidden
+  max-height: 800px
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2)
 
-  p
-    margin-top: 15px
-    font-size: 0.9em
+  h1
+    font-size: 4em
     color: $light-background
-    margin-bottom: 30px
+    margin: 40px 10px 10px 20px
+    z-index: 2
+    position: relative
+    text-align: center
+    font-weight: 400
+    text-shadow: 0px 0px 40px rgba(0,0,0,0.5)
+    text-transform: uppercase
 
-  div.width-limiter
-    display: flex
-    flex-direction: column
-    justify-content: flex-end
+  h2
+    color: $light-background
+    z-index: 2
+    position: relative
+    text-align: center
+    font-weight: 400
+    text-shadow: 0px 0px 40px rgba(0,0,0,0.5)
+    animation: title
+    animation-duration: 2s
+
+  hr
+    color: $light-background
+    width: 7%
+    z-index: 2
+    position: relative
+    border: 2px solid $highlight-color
+    margin: 20px auto 20px auto
+    text-shadow: 0px 0px 40px rgba(0,0,0,0.5)
 
   img
-    top: 0
-    bottom: 0
-    left: 0
-    right: 0
-    z-index: -1
+    min-width: 100%
+    min-height: 100%
+    width: auto
+    height: auto
+    top: 60%
+    left: 50%
+    position: absolute
+    transform: translateX(-50%) translateY(-50%)
+    -webkit-transform: translateX(-50%) translateY(-50%)
+    -moz-transform: translateX(-50%) translateY(-50%)
+    -o-transform: translateX(-50%) translateY(-50%)
+    -moz-transform: translateX(-50%) translateY(-50%)
+    -ms-transform: translateX(-50%) translateY(-50%)
+    z-index: 1
+    -webkit-filter: brightness(0.5)
+    -moz-filter: brightness(0.5)
+    -o-filter: brightness(0.5)
+    -ms-filter: brightness(0.5)
+    filter: brightness(0.5)
+
+  p
+    position: relative
+    z-index: 2
+    color: $dark-background
+    text-align: center
+    font-size: 0.9em
+    margin-top: 10px
+    text-shadow: 0px 0px 40px rgba(0,0,0,0.5)
+
+span.caption
+  font-size: 0.8em
+  text-align: right
+  color: $mid-text
+  margin-left: auto
+  display: block
+  padding: 5px
+  font-family: Montserrat
+
+article
+  max-width: 1024px
+  padding: 0px 20px 0px 20px
+  margin: 40px auto 0px auto
+  border-left: 1px solid rgba(214,161,147,0.5)
+
+  p
+    width: 60%
+    font-family: Cardo
+    color: $text-color
+    margin-bottom: 30px
+    font-size: 1.2em
+    font-weight: 100
+
+  p:first-child
+    font-size: 1.5em
+    padding-bottom: 20px
+    border-bottom: 5px solid $highlight-color
+    font-weight: 400
+
+
+  p:first-child:first-letter
+    font-size: 70px
+    line-height: 65px
+    float: left
+    padding-right: 10px
+
+  figure
+    width: 50%
+    float: right
+    margin: 30px
+
+    img
+      width: 100%
+      border-bottom: 4px solid $highlight-color
+
+  figcaption
+    font-size: 0.8em
+    font-weight: 100
+    color: $mid-text
+    font-family: Montserrat
+    margin-bottom: 30px
+
+  div.pull
+    width: 50%
+    float: right
+    color: $mid-text
+    font-family: Montserrat
+    font-size: 2em
+    margin: 30px
+    font-weight: 100
+
+    hr
+      width: 20%
+      border: 2px solid $highlight-color
+      margin: 20px 0px 0px 0px
+
+    span
+      font-size: 15px
+      font-weight: 100
+      margin-top: 9px
+      display: block
+
+footer
+  background-color: $highlight-color
+  width: 100%
+  padding: 40px 0px 40px 0px
+  margin-top: 40px
+  color: $light-background
+  text-align: center
+  font-family: Montserrat
+  font-weight: 400
+
+  hr
+    width: 3%
+    border: 1px solid $light-background
+    margin: 10px auto 10px auto
+    text-align: center
+
+  span
+    font-size: 0.8em
+
+  a
+    color: $dark-background
+
+iframe.twitter-tweet
+  margin-bottom: 30px !important
+
+iframe
+  border: 0px
+  box-shadow: 0
+  border-bottom: 4px solid $highlight-color
