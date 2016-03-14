@@ -37,7 +37,8 @@ section#hero {
   position: relative;
   overflow: hidden;
   max-height: 800px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: black; }
   section#hero h1 {
     font-size: 4em;
     color: #fafafa;
@@ -85,6 +86,17 @@ section#hero {
     -o-filter: brightness(0.5);
     -ms-filter: brightness(0.5);
     filter: brightness(0.5); }
+  section#hero video {
+    position: absolute;
+    -webkit-filter: brightness(0.5) blur(2px);
+    -moz-filter: brightness(0.5) blur(2px);
+    -o-filter: brightness(0.5) blur(2px);
+    filter: brightness(0.5) blur(2px);
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    left: 50%;
+    transform: translateX(-50%) scale(1.1, 1.1); }
   section#hero p {
     position: relative;
     z-index: 2;
