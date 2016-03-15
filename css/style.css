@@ -57,7 +57,8 @@ section#hero {
     font-weight: 400;
     text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
     animation: title;
-    animation-duration: 2s; }
+    animation-duration: 2s;
+    padding: 0px 50px 0px 50px; }
   section#hero hr {
     color: #fafafa;
     width: 7%;
