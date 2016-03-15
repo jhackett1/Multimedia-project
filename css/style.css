@@ -72,7 +72,7 @@ section#hero {
     min-height: 100%;
     width: auto;
     height: auto;
-    top: 60%;
+    top: 50%;
     left: 50%;
     position: absolute;
     transform: translateX(-50%) translateY(-50%);
@@ -86,7 +86,8 @@ section#hero {
     -moz-filter: brightness(0.5);
     -o-filter: brightness(0.5);
     -ms-filter: brightness(0.5);
-    filter: brightness(0.5); }
+    filter: brightness(0.5);
+    display: none; }
   section#hero video {
     position: absolute;
     -webkit-filter: brightness(0.5) blur(2px);
@@ -203,6 +204,20 @@ footer {
 
 iframe.twitter-tweet {
   margin-bottom: 30px !important; }
+
+div.video-wrapper {
+  position: relative;
+  padding-bottom: 51%;
+  padding-top: 25px;
+  height: 0;
+  margin-bottom: 10px; }
+
+div.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 iframe {
   border: 0px;
