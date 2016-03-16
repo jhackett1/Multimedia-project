@@ -239,4 +239,13 @@ article h3 {
     margin-left: -25px;
     margin-right: 10px; }
 
+ul {
+  list-style-type: none;
+  border-left: 3px solid rgba(214, 161, 147, 0.5); }
+  ul li {
+    font-family: montserrat;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+    margin-left: 10px; }
+
 /*# sourceMappingURL=style.css.map */
